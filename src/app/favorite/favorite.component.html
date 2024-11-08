@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+
+<h2>Favourites</h2>
+<div *ngIf="favorites.length > 0; else noFavorites" class="favorites">
+    <div *ngFor="let item of favorites" class="restaurant-card">
+      <img [src]="item.image" alt="{{ item.name }}" class="restaurant-image" [routerLink]="['/item',item.id]">
+      <h3>{{ item.rname }}</h3>
+      <p>{{ item.name }}</p>
+      <button (click)="removeFavorite(item.id)">Unfavorite</button>
+    </div>
+</div>
+  
+<ng-template #noFavorites class="noFavorites">
+    <p>You have no favorite restaurants.</p>
+</ng-template>
+  

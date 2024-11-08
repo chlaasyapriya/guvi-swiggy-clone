@@ -1,0 +1,248 @@
+.hero {
+  background-color: #ff5200;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  width: 300px;
+}
+
+.categories {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ff5200;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-card p {
+  color: rgb(103, 103, 103);
+}
+
+.category-card img {
+  width: 100%;
+  max-width: 200px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.best-food-options,
+.instamart-groceries,
+.featured {
+  margin: 50px 20px;
+  text-align: center;
+}
+
+.food-items,
+.grocery-items,
+.restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.food-item,
+.grocery-item,
+.restaurant-card {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.food-item img,
+.grocery-item img {
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.grocery-item img {
+  height: 60px;
+  border-radius: 8px;
+}
+
+.food-item p,
+.grocery-item p {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.food-item:hover,
+.grocery-item:hover,
+.restaurant-card:hover {
+  transform: scale(1.05);
+}
+
+.restaurant-card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.download-app {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+}  
+
+.download-app h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 250px;
+}  
+
+.download-app p {
+  font-size: 16px;
+  margin: 20px 250px;
+  color: #ccc;
+}  
+.logo2{
+  margin:10px 250px ;
+}
+.qr-code {
+  margin: 20px 200px;
+}  
+.qr-code img {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.footer-sections div {
+  min-width: 150px;
+}
+
+.footer-sections h4 {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.footer-sections a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+.footer-sections a:hover {
+  color: #ff5200;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .categories, .restaurants, .footer-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .restaurant-card {
+    width: 90%;
+  }
+  
+  .search-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .download-app {
+    background-color: black;
+    color:white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .download-app h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .download-app p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .qr-code img {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+  }
+}
+
+

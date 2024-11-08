@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+<div class="item-details-container">
+    <div *ngIf="item" class="item-details">
+
+      <h2 class="item-rname">{{ item.rname }}</h2>
+      <p class="item-description">{{ item.description }}</p>
+      <div class="item-flex">
+        <img [src]="item.image" alt="{{ item.name }}" class="item-image">
+        <div class="item-flex2"> 
+          <h3 class="item-name">{{ item.name }}</h3>
+          
+            <p class="price">₹{{ item.price}}</p>
+            <p class="rating">Rating: {{ item.rating }} ★</p>
+          
+        </div>
+        <div class="reviews">
+          <h3>Customer Reviews</h3>
+          <ul>
+            <li *ngFor="let review of item.reviews">{{ review }}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item-btns">
+        <button class="item-btn" (click)="addToCart()" [routerLink]="['/cart']">Add to Cart</button>
+        <button class="item-btn" (click)="toggleFavorite(item)">{{ isFavorited(item) ? 'Unfavorite' : 'Favorite' }}</button>
+      </div>  
+      
+    </div>
+
+    <div *ngIf="!item" class="not-found">
+      <h2>Item Not Found</h2>
+      <p>Go back to the <a routerLink="/home">home page</a>.</p>
+    </div>
+</div>
+  

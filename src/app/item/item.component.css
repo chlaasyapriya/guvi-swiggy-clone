@@ -1,0 +1,161 @@
+.item-details-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.item-details {
+  border: 3.5px solid #ff5200;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: #fafafa;
+}
+
+.item-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.item-rname {
+  font-size: 44px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.item-description {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.item-name {
+  font-size: 24px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.item-flex{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.item-flex2{
+  margin-top: 50px;
+}
+
+.price {
+  font-size: 20px;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.rating {
+  font-size: 18px;
+  color: #ff5200;
+  font-weight: bold;
+}
+
+.reviews {
+  margin-top: 20px;
+  text-align: left;
+  background-color: white;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 10px 10px 5px rgb(207, 207, 207);
+}
+
+.reviews h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.reviews ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #555;
+}
+
+.item-btns{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.item-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #FF5722;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.item-btn:hover {
+  background-color: #E64A19;
+}
+
+.not-found {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.not-found h2 {
+  font-size: 24px;
+  color: #666;
+}
+
+.not-found p {
+  font-size: 16px;
+  color: #888;
+}
+
+
+@media (max-width: 768px) {
+  .item-details-container {
+      padding: 15px;
+  }
+
+  .item-rname {
+      font-size: 36px;
+  }
+
+  .item-description {
+      font-size: 18px;
+  }
+
+  .item-name {
+      font-size: 22px;
+  }
+
+  .item-flex {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .price {
+      font-size: 18px;
+  }
+
+  .rating {
+      font-size: 16px;
+  }
+
+  .item-btn {
+      width: 100%;
+  }
+
+  .reviews ul {
+      font-size: 14px;
+  }
+}

@@ -1,0 +1,43 @@
+.header {
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff5200;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 120px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .nav-links a{
+    text-decoration: none;
+  }
+  .nav-links a:hover{
+    transform: scale(1.05);
+  }
+  .btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .btn-app {
+    background-color: white;
+    color: #ff5200;
+  }
+  .btn-signin {
+    background-color: black;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links{
+      display: none;
+    }
+  }

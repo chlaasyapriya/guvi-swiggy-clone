@@ -1,0 +1,99 @@
+<app-navbar></app-navbar>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Order food & groceries. Discover best restaurants. Swiggy it!</h1>
+    <div class="search-container">
+      <input type="text" placeholder="Enter your delivery location" class="search-input" />
+      <input type="text" placeholder="Search for restaurant, item or more" class="search-input" />
+    </div>
+  </div>
+</section>
+
+<section class="categories">
+  <div class="category-card" *ngFor="let category of categories">
+    <img [src]="category.image" alt="{{ category.name }}" />
+    <h3>{{ category.name }}</h3>
+    <p>{{ category.offer }}</p>
+  </div>
+</section>
+
+<div class="best-food-options">
+    <h2>Order our best food options</h2>
+    <div class="food-items">
+      <div class="food-item" *ngFor="let item of items" [routerLink]="['/item',item.id]">
+        <img [src]="item.image" alt="{{ item.name }}" />
+        <p>{{ item.name }}</p>
+      </div>
+    </div>
+</div>
+
+<div class="instamart-groceries">
+    <h2>Shop groceries on Instamart</h2>
+    <div class="grocery-items">
+      <div class="grocery-item" *ngFor="let item of groceries">
+        <img [src]="item.image" alt="{{ item.name }}" />
+        <p>{{ item.name }}</p>
+      </div>
+    </div>
+</div>
+  
+  
+<section class="featured">
+    <h2>Discover best restaurants</h2>
+    <div class="restaurants">
+      <div class="restaurant-card" *ngFor="let restaurant of restaurants">
+        <img [src]="restaurant.image" alt="{{ restaurant.name }}" />
+        <div class="info">
+          <h3>{{ restaurant.name }}</h3>
+          <p>{{ restaurant.location }}</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<div class="download-app">
+    <div>
+        <img src="logo2.png" alt="logo" class="logo2">
+        <h2>Get the Swiggy App now!</h2>
+        <p>For best offers and discounts curated specially for you.</p>
+    </div>     
+    <div class="qr-code">
+      <img src="qr-code.png" alt="QR Code" />
+    </div>
+</div>
+
+<footer>
+    <div class="footer-sections">
+      <div class="company">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Team</a>
+        <a href="#">Swiggy One</a>
+        <a href="#">Swiggy Instamart</a>
+      </div>
+      <div class="contact">
+        <h4>Contact Us</h4>
+        <a href="#">Help & Support</a>
+        <a href="#">Partner with Us</a>
+        <a href="#">Ride with Us</a>
+      </div>
+      <div class="legal">
+        <h4>Legal</h4>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+    <h4>Follow Us On-</h4>
+    <div class="social-media">
+      <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+      <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+      <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+    </div>
+</footer>
+  
+  
+  
+  
